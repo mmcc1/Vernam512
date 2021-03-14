@@ -19,22 +19,29 @@ namespace Vernam512
 
         static void Main(string[] args)
         {
-            Variables v = ParseArgs(args);
-            ValidateVariables(v);
-            
-            if(v.IsEncrypt)
+            try
             {
-                Console.WriteLine("Vernam512 Cipher " + version);
-                Console.WriteLine(Environment.NewLine);
-                File.WriteAllBytes(v.OutputFile, VernamHash.Encrypt(v.Key, v.InputFile, v.ByteSelection));
-                Console.WriteLine("Encrypted.");
+                Variables v = ParseArgs(args);
+                ValidateVariables(v);
+
+                if (v.IsEncrypt)
+                {
+                    Console.WriteLine("Vernam512 Cipher " + version);
+                    Console.WriteLine(Environment.NewLine);
+                    File.WriteAllBytes(v.OutputFile, VernamHash.Encrypt(v.Key, v.InputFile, v.ByteSelection));
+                    Console.WriteLine("Encrypted.");
+                }
+                else
+                {
+                    Console.WriteLine("Vernam512 Cipher " + version);
+                    Console.WriteLine(Environment.NewLine);
+                    File.WriteAllBytes(v.OutputFile, VernamHash.Decrypt(v.Key, v.InputFile, v.ByteSelection));
+                    Console.WriteLine("Decrypted.");
+                }
             }
-            else
+            catch
             {
-                Console.WriteLine("Vernam512 Cipher " + version);
-                Console.WriteLine(Environment.NewLine);
-                File.WriteAllBytes(v.OutputFile, VernamHash.Decrypt(v.Key, v.InputFile, v.ByteSelection));
-                Console.WriteLine("Decrypted.");
+                Terminate("Invalid usage.");
             }
         }
 
