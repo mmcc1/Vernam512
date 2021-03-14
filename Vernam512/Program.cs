@@ -15,7 +15,7 @@ namespace Vernam512
 
     class Program
     {
-        private static string version = "1.0";
+        private static string version = "1.0.1";
 
         static void Main(string[] args)
         {
