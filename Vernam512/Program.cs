@@ -15,7 +15,7 @@ namespace Vernam512
 
     class Program
     {
-        private static string version = "1.0.2";
+        private static string version = "1.0.3";
 
         static void Main(string[] args)
         {
@@ -62,9 +62,9 @@ namespace Vernam512
                 Console.WriteLine("Vernam512 Cipher " + version);
                 Console.WriteLine(Environment.NewLine);
                 Console.WriteLine("To encrypt:");
-                Console.WriteLine("Vernam512 -e -k abc12345 -i plaintext.txt -o ciphertext.512 -b 0");
+                Console.WriteLine("Vernam512 -e -i plaintext.txt -o ciphertext.512 -b 0");
                 Console.WriteLine("To decrypt:");
-                Console.WriteLine("Vernam512 -d -k abc12345 -i ciphertext.512 -o plaintext.txt -b 0");
+                Console.WriteLine("Vernam512 -d -i ciphertext.512 -o plaintext.txt -b 0");
                 Console.WriteLine(Environment.NewLine);
                 Console.WriteLine("Parameters:");
                 Console.WriteLine("-b                   - Byte selection (0-63)");
