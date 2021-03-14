@@ -1,4 +1,4 @@
-# Vernam512 Cipher 1.0.2
+# Vernam512 Cipher 1.0.3
 A command line version of VernamHash Cipher
 
 To encrypt:  
