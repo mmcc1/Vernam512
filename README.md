@@ -4,8 +4,8 @@ A command line version of VernamHash Cipher
 To encrypt:  
 Vernam512 -e [-k abc12345] -i plaintext.txt -o ciphertext.512 -b 0  
 To decrypt:  
-VVernam512 -d [-k abc12345] -i ciphertext.512 -o plaintext.txt -b 0 
-[...] is an optional parameter.
+VVernam512 -d [-k abc12345] -i ciphertext.512 -o plaintext.txt -b 0  
+[...] is an optional parameter.  
   
   
 Parameters:  
