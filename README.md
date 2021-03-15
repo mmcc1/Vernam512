@@ -19,7 +19,7 @@ Parameters:
   
 Description  
     
-Vernam512 is an implementation of the Vernam cipher without the requirement of One Time Pad (OTP) distribution.  The OTP is generated dymanically, from the key, using SHA512.  The minimum key length is 64 byts (512 bits).  
+Vernam512 is an implementation of the Vernam cipher without the requirement of One Time Pad (OTP) distribution.  The OTP is generated dymanically, from the key, using SHA512.  The minimum key length is 64 bytes (512 bits).  
   
 The security of the algorithm is directly related to the strength of SHA512 and proper key selection.  
   
