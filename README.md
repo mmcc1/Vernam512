@@ -16,3 +16,12 @@ Parameters:
 -i (filename)        - input file  
 -k (Key)             - Optional. 64 byte min.  
 -o (filename)        - output file  
+  
+Description  
+    
+Vernam512 is an implementation of the Vernam cipher without the requirement of One Time Pad (OTP) distribution.  The OTP is generated dymanically, from the key, using SHA512.  The minimum key length is 64 byts (512 bits).  
+  
+The security of the algorithm is directly related to the strength of SHA512 and proper key selection.  
+  
+Note on Byte Selection  
+In generating the OTP from SHA512, there are 64 bytes returned as a hash.  The byte selection chooses one of these bytes to construct the OTP.  To successfully decrypt a file, two pieces of information must be provided.  The first is the Key and the second is the Byte Selection value.
