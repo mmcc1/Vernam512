@@ -14,5 +14,5 @@ Parameters:
 -e                   - Decrypt  
 -h                   - Display help  
 -i (filename)        - input file  
--k (Key)             - Optional. 64 byte min.
+-k (Key)             - Optional. 64 byte min.  
 -o (filename)        - output file  
