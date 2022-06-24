@@ -26,7 +26,7 @@ namespace Vernam512
             byte[] tables = new byte[inputLength];
             byte[] b = key;
 
-            using (SHA512 shaM = new SHA512Managed())
+            using (SHA512 shaM = SHA512.Create())
             {
                 for (int i = 0; i < inputLength; i++)
                 {
