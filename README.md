@@ -1,5 +1,5 @@
-# Vernam512 Cipher 1.0.4
-A command line version of VernamHash Cipher
+# Vernam512 Cipher 1.1.0
+A command line version of VernamHash Cipher - NET 6 Implementation  
 
 To encrypt:  
 Vernam512 -e [-k abc12345] -i plaintext.txt -o ciphertext.512 -b 0  
